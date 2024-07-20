@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <Title>While You Were Gone</Title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"content="width=device-width"/>
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+
+
+    <header>
+        <p>The Stranger</p>
+    </header>
+
+    <body>
+        <div>
+            <section class="opening">
+                <P>You go to sleep on the Fred's Fish Fry with Olga next to you (Even more visibly pregnant than earlier that day). You slowly begin to question your life and whether the decisions
+                    you made were right. You doze off thinking about how you're going to handle this issue. Suddenly you are in a different plane. The Space around you is all purple. In front of you 
+                    is an asteroid floating in the space. You see an entrance into what looks like a cave inside the asteroid. 
+                </P>
+            </section>
+            <section class="ans1">
+                <p>What do you do?</p>
+                <input type="checkbox" id="stay"/>
+                    <label for="stay">Stay where you are. You don't know what is in the cave.</label>
+                <input type="checkbox" id="go"/>
+                    <label for="go">Go into the cave. Everything seems to look fine.</label>
+            </section>
+            <section Class="opening" style="display:none" id="stay1">
+                <p>You stay where you are. And you continue to stay. You begin to wonder how long you have actually been here. It seems like you have been there for hours. Your body aches
+                    from the prior fight. Normally, you would feel rested and stronger after having this strong of a dream. But you don't feel any different than before you fell asleep.
+                    You slowly begin to freak out. What is going on? Why am I still tired? You begin to scream loudly. What is going on?! As you scream you hear a voice emanate from the cave, 
+                    "What the Fuck?! Who is that?". You see a figure bolt out of the cave. The emanate a purple fog all around them. They rush towards you. You feel there anger is directed towards you.
+                    As they are near you, they place what appears to be their hand on your forehead. You suddenly awake in your bed. As if you fell into the bed. Olga wakes up. Her stomach 
+                    is clearly larger. It almost appears like she is ready to give birth. You feel like you did not take a long rest.  
+                </p>
+
+                <p>You take a d4 of psychic damage and you do not replenish any of your spell slots.</p>
+            </section>
+
+            <section class="opening" style="display:none" id="go1">
+                <p>You want to move to the cave but you can't find any traction to actually move. You try swimming but that doesn't work either. In your mind you imagine moving towards
+                    the cave. As you think this, your body slowly moves towards the cave. You walk in and you see a long dug out corridor. At the end you see a bright purple light emanating.
+                    You move closer to the end of the corridor. When you reach the bright light you see a large room. On your left, you see a row of crystal balls. On your right, you see a table with 
+                    spell scrolls on them. At the end of the room you see someone at a desk crouched over a crystal ball. In the corner of the room you see a portal in the corner of the room.
+                    You think that the portal may be your ticket out of this plane of existence. 
+                </p>
+            </section>
+
+            <section class="ans1" style="display:none" id="ans2">
+                <p>What do you do?</p>
+                <label for="balls">You move to the Crystal balls to see what you can find</label>
+                    <input type="checkbox" id="balls" onclick=""/> <br/>
+                <label for="scrolls">You move towards the scrolls.</label>
+                    <input type="checkbox" id="scrolls" onclick=""/>
+                <label for="theman">You move towards the portal.</label>
+                    <input type="checkbox" id="theman" />
+
+            </section>
+
+            <section class="ans1" id="ans3" style="display:none">
+                <p>You move towards the crystal balls. You see three lined up. As you move closer to them, you begin to notice that each of them are projecting moving pictures. You
+                    begin to recognize that the picture is of yourself and your party! Each crystal ball is showing different events. Which crystal ball do you look at?
+                </p>
+
+                <label for="1">1</label>
+                    <input type="checkbox" id="balls1" /> <br/>
+                <label for="2">2</label>
+                    <input type="checkbox" id="balls2" />
+                <label for="3">3</label>
+                    <input type="checkbox" id="balls3" />
+            </section>
+
+            <section class="ans1" id="ballsAns1" style="display:none">
+                <p>You move to the first one on the table. You see the party at the bank. The image begins to become cloudy. Suddenly the image changes to the group opening a 
+                    vault door.  In the vault you see a mound a gold pieces and you see tables with crowns and jewels on top. You see multiple chests along the walls of the vault. 
+                    on the ground you see a spell glyph written on the ground but you can't make out what kind of glyph it is. </p>
+            </section>
+
+            <section class="ans1" id="ballsAns2" style="display:none">
+                <p> You move to the middle one on the table. You walk towards a vault deep in a cave. You move forward and are walking down a stone corridor with doors on either side. 
+                    You reach the end of the door and open it. You a see a gnome sitting a table. You see a furnance on one side and you see a table and chairs on the other. 
+                    You see 2 dragonborns and a human standing next to each other. They appear to be dead but still animated. You move deeper into the room. Behind you, you hear something fall 
+                    to the ground. </p>
+
+            </section>
+
+            <section class="ans1" id="ballsAns3" style="display:none">
+                <p>You move towards the last one on the table. You see yourself standing in front of a bright light. The rest of the party is in front of you. In your hands is a ring.
+                    This ring emenates with power. A power you have not yet wielded. You're given a choice. You're unsure of what you want to do. </p>
+                
+            </section>
+
+            <section class="ans1" id="end1" style="display:none">
+                <p>Before you can finish watching the events unfold in front of you, you are pulled away. You see a figure cloaked in purple surrounded by a purple mist. "How did you get in here?"
+                    the Figure asks. He looks down and sees the knife you stole from Wandell. "ohhh...I see. That's a special knife right there. Make sure you put it to good use..." and at that, you wake
+                    up next to Olga. Her belly has for sure grown larger from when you last saw it. You wake up from a good long rest. 
+                </p>
+                
+            </section>
+
+            <section class="ans1" id="scrollIntro" style="display:none">
+                <p>You move towards the scrolls. Before you are a wide range of scrolls. All of them have glyphs and instructions on how to perform
+                    a spell. You don't know what spells are in front of you. The figure hunched over the crystal ball seems to have noticed that you 
+                    are in the room. You only have enough time to grab one scroll. 
+                </p>
+                <p>Roll a d20 and enter it into the prompt to see which scroll you grabbed</p>
+            </section>
+
+            <section class="ans1" id="manIntro" style="display:none">
+                <p>You move towards the portal. The man seems to be focused on the crystal ball. You try to move stealthly
+                </p>
+                <p>Roll a d20 and add your stealth modifier. Enter the number into the prompt.</p>
+
+            </section>
+ 
+
+
+      
+
+               
+
+                <script src="./script.js"></script>
+          
+            </section>
+
+            
+        </div>
+
+        </div>
+
+
+
+    </body>
+
+
+    <footer>
+
+
+    </footer>
+
+
+</html>
