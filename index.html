@@ -64,11 +64,11 @@
                     begin to recognize that the picture is of yourself and your party! Each crystal ball is showing different events. Which crystal ball do you look at?
                 </p>
 
-                <label for="1">1</label>
+                <label for="balls1">1</label>
                     <input type="checkbox" id="balls1" /> <br/>
-                <label for="2">2</label>
+                <label for="balls2">2</label>
                     <input type="checkbox" id="balls2" />
-                <label for="3">3</label>
+                <label for="balls3">3</label>
                     <input type="checkbox" id="balls3" />
             </section>
 
@@ -105,7 +105,34 @@
                     a spell. You don't know what spells are in front of you. The figure hunched over the crystal ball seems to have noticed that you 
                     are in the room. You only have enough time to grab one scroll. 
                 </p>
-                <p>Roll a d20 and enter it into the prompt to see which scroll you grabbed</p>
+                
+
+                <label for="sleightofhand">Roll a d20 and add your Sleight of Hand modifier. Select the roll you had.</label>
+                        <input id="nat1" type="checkbox">Natural 1</input>
+                        <input id="poor" type="checkbox">2-10</input>
+                        <input id="decent" type="checkbox">11-15</input>
+                        <input id="good" type="checkbox">16-20</input>
+                        <input id="great" type="checkbox">21-24</input>
+                        <input id="nat20" type="checkbox">25+</input>
+            </section>
+            
+            <section>
+            
+                <p id="nat1Ans" style="display:none">You take a "Find Traps" Scroll.</p>
+                <p id="poorAns" style="display:none">You take a "Fire Bolt" Scroll.</p>
+                <p id="decentAns" style="display:none">You take a "Disguise Self" Scroll.</p>
+                <p id="goodAns" style="display:none">You take a "Misty Step" Scroll.</p>
+                <p id="greatAns" style="display:none">You take a "Fire Ball" Scroll.</p>
+                <p id="nat20Ans" style="display:none">You take a "Power Word Kill" Scroll.</p>
+            </section>
+
+            <section id="end2" style="display:none">
+                <p>The figure begins to move towards you. You reach out to grab a scroll. As you grab a school you are grabbed by the figure. 
+                    "What are you doing here?", the figure asks. He seems to look through you and sees that you hold the Wandell's dagger. "Oh. 
+                    I see you. You were drawn to your patron. Be gone. I need you in the physical realm. I need you to do what is needed..." Before
+                    you can realize it, you are thrown back into your bed. Olga fast asleep. She looks even more pregnant than what she did the night before. 
+                    You are awoken well rested...with the scroll in your hand.
+                </p>
             </section>
 
             <section class="ans1" id="manIntro" style="display:none">

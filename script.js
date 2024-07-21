@@ -18,6 +18,23 @@ const scrolls = document.querySelector('#scrolls')
 const scrollsIntro = document.querySelector('#scrollIntro')
 const theman = document.querySelector('#theman')
 const manIntro  = document.querySelector('#manIntro')
+let manTime = 5
+let sleightofhand = document.querySelector('#sleightofhand')
+const nat1 = document.querySelector('#nat1')
+const poor = document.querySelector('#poor')
+const decent = document.querySelector('#decent')
+const good = document.querySelector('#good')
+const great = document.querySelector('#great')
+const nat20 = document.querySelector('#nat20')
+const nat1Ans = document.querySelector('#nat1Ans')
+const poorAns = document.querySelector('#poorAns')
+const decentAns = document.querySelector('#decentAns')
+const goodAns = document.querySelector('#goodAns')
+const greatAns = document.querySelector('#greatAns')
+const nat20Ans = document.querySelector('#nat20Ans')
+const end2 = document.querySelector('#end2')
+
+
 
 function setTime() {
     const counter = setInterval(function (){
@@ -128,6 +145,85 @@ scrolls.addEventListener('click', function () {
         'display:none');
         scrollsIntro.setAttribute('style',
             'display:flex');
+            
+        
+        }
+})
+
+nat1.addEventListener('click', function () {
+    
+    if (nat1.checked === true) {
+
+        scrollsIntro.setAttribute('style',
+        'display:none');
+        nat1Ans.setAttribute('style',
+            'display:flex');
+        end2.setAttribute('style','display:flex');
+        
+        }
+})
+
+poor.addEventListener('click', function () {
+    
+    if (nat1.checked === true) {
+
+        scrollsIntro.setAttribute('style',
+        'display:none');
+        poorAns.setAttribute('style',
+            'display:flex');
+        end2.setAttribute('style','display:flex');
+        
+        }
+})
+
+decent.addEventListener('click', function () {
+    
+    if (decent.checked === true) {
+
+        scrollsIntro.setAttribute('style',
+        'display:none');
+        decentAns.setAttribute('style',
+            'display:flex');
+        end2.setAttribute('style','display:flex');
+        
+        }
+})
+
+good.addEventListener('click', function () {
+    
+    if (good.checked === true) {
+
+        scrollsIntro.setAttribute('style',
+        'display:none');
+        goodAns.setAttribute('style',
+            'display:flex');
+        end2.setAttribute('style','display:flex');
+        
+        }
+})
+
+great.addEventListener('click', function () {
+    
+    if (great.checked === true) {
+
+        scrollsIntro.setAttribute('style',
+        'display:none');
+        greatAns.setAttribute('style',
+            'display:flex');
+        end2.setAttribute('style','display:flex');
+        
+        }
+})
+
+nat20.addEventListener('click', function () {
+    
+    if (nat20.checked === true) {
+
+        scrollsIntro.setAttribute('style',
+        'display:none');
+        nat20Ans.setAttribute('style',
+            'display:flex');
+        end2.setAttribute('style','display:flex');
         
         }
 })
@@ -143,6 +239,10 @@ theman.addEventListener('click', function () {
         
         }
 })
+
+
+
+
 
 
 
