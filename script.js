@@ -32,7 +32,19 @@ const decentAns = document.querySelector('#decentAns')
 const goodAns = document.querySelector('#goodAns')
 const greatAns = document.querySelector('#greatAns')
 const nat20Ans = document.querySelector('#nat20Ans')
-const end2 = document.querySelector('#end2')
+const sneaknat1 = document.querySelector('#sneaknat1')
+const sneakpoor = document.querySelector('#sneakpoor')
+const sneakdecent = document.querySelector('#sneakdecent')
+const sneakgood = document.querySelector('#sneakgood')
+const sneakgreat = document.querySelector('#sneakgreat')
+const sneaknat20 = document.querySelector('#sneaknat20')
+const sneaknat1Ans = document.querySelector('#sneaknat1Ans')
+const sneakpoorAns = document.querySelector('#sneakpoorAns')
+const sneakdecentAns = document.querySelector('#sneakdecentAns')
+const sneakgoodAns = document.querySelector('#sneakgoodAns')
+const sneakgreatAns = document.querySelector('#sneakgreatAns')
+const sneaknat20Ans = document.querySelector('#sneaknat20Ans')
+
 
 
 
@@ -165,7 +177,7 @@ nat1.addEventListener('click', function () {
 
 poor.addEventListener('click', function () {
     
-    if (nat1.checked === true) {
+    if (poor.checked === true) {
 
         scrollsIntro.setAttribute('style',
         'display:none');
@@ -236,6 +248,84 @@ theman.addEventListener('click', function () {
         'display:none');
         manIntro.setAttribute('style',
             'display:flex');
+        
+        }
+})
+
+sneaknat1.addEventListener('click', function () {
+    
+    if (sneaknat1.checked === true) {
+
+        manIntro.setAttribute('style',
+        'display:none');
+        sneaknat1Ans.setAttribute('style',
+            'display:flex');
+        
+        
+        }
+})
+
+sneakpoor.addEventListener('click', function () {
+    
+    if (sneakpoor.checked === true) {
+
+        manIntro.setAttribute('style',
+        'display:none');
+        sneakpoorAns.setAttribute('style',
+            'display:flex');
+   
+        
+        }
+})
+
+sneakdecent.addEventListener('click', function () {
+    
+    if (sneakdecent.checked === true) {
+
+        manIntro.setAttribute('style',
+        'display:none');
+        sneakdecentAns.setAttribute('style',
+            'display:flex');
+       
+        
+        }
+})
+
+sneakgood.addEventListener('click', function () {
+    
+    if (sneakgood.checked === true) {
+
+        manIntro.setAttribute('style',
+        'display:none');
+        sneakgoodAns.setAttribute('style',
+            'display:flex');
+      
+        
+        }
+})
+
+sneakgreat.addEventListener('click', function () {
+    
+    if (sneakgreat.checked === true) {
+
+        manIntro.setAttribute('style',
+        'display:none');
+        sneakgreatAns.setAttribute('style',
+            'display:flex');
+        
+        
+        }
+})
+
+sneaknat20.addEventListener('click', function () {
+    
+    if (sneaknat20.checked === true) {
+
+        manIntro.setAttribute('style',
+        'display:none');
+        sneaknat20Ans.setAttribute('style',
+            'display:flex');
+      
         
         }
 })

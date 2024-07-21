@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <Title>While You Were Gone</Title>
+        <Title>The Stranger</Title>
         <meta charset="UTF-8"/>
         <meta name="viewport"content="width=device-width"/>
         <link rel="stylesheet" href="./assets/style.css">
@@ -22,10 +22,11 @@
             </section>
             <section class="ans1">
                 <p>What do you do?</p>
-                <input type="checkbox" id="stay"/>
-                    <label for="stay">Stay where you are. You don't know what is in the cave.</label>
-                <input type="checkbox" id="go"/>
-                    <label for="go">Go into the cave. Everything seems to look fine.</label>
+                <label for="stay">Stay where you are. You don't know what is in the cave.</label>
+                    <input type="checkbox" id="stay"/>
+                <label for="go">Go into the cave. Everything seems to look fine.</label>    
+                    <input type="checkbox" id="go"/>
+                    
             </section>
             <section Class="opening" style="display:none" id="stay1">
                 <p>You stay where you are. And you continue to stay. You begin to wonder how long you have actually been here. It seems like you have been there for hours. Your body aches
@@ -136,9 +137,75 @@
             </section>
 
             <section class="ans1" id="manIntro" style="display:none">
-                <p>You move towards the portal. The man seems to be focused on the crystal ball. You try to move stealthly
+                <p>You move towards the portal. The figure seems to be focused on the crystal ball. You try to move stealthly
                 </p>
-                <p>Roll a d20 and add your stealth modifier. Enter the number into the prompt.</p>
+                <p>Roll a d20 and add your Stealth modifier. Select the roll you had.</p>
+                <input id="sneaknat1" type="checkbox">Natural 1</input>
+                <input id="sneakpoor" type="checkbox">2-10</input>
+                <input id="sneakdecent" type="checkbox">11-15</input>
+                <input id="sneakgood" type="checkbox">16-20</input>
+                <input id="sneakgreat" type="checkbox">21-24</input>
+                <input id="sneaknat20" type="checkbox">25+</input>
+                
+            </section>
+
+            <section class="ans1" id="stealthAns">
+                <p id="sneaknat1Ans" style="display:none">You move towards the portal. As you make it to the portal, you drip and fall to the ground.
+                    you hope that the figure did not hear you. He seems to still look at the portal. As you get up to move back towards the portal
+                    you feel an electric shock go through your body. The Figure stands up and move towards you. He lifts his hand and you move with his hand.
+                    The Figure brings you closer. "The Dagger brought you to me. But that Knife does not belong to you." He reaches out and grabs the knife from
+                    your person. He places it in his belt and he shoos you away. When he waves his hand, you're thrust towards the portal. You hurdle through the 
+                    portal. The speed at which you move through the portal feels like you are going to be torn apart. You awake next to Olga.
+                    Her belly seems to have grown even more than before. You awake tired. You do not replenish your spell slots and you take d4
+                    psychic damage.
+                </p>
+
+                <p id="sneakpoorAns" style="display:none">You move towards the portal. You move slowly and softly. It seems like you'll make it to the portal
+                    without being noticed. The figure seems to still look at the crystal ball in front of him. As you move towards the portal
+                    you feel an electric shock go through your body. The Figure stands up and move towards you. He lifts his hand and you move with his hand.
+                    The Figure brings you closer. "The Dagger brought you to me. But that Knife does not belong to you." He reaches out and grabs the knife from
+                    your person. He places it in his belt and he shoos you away. When he waves his hand, you're thrust towards the portal. You hurdle through the 
+                    portal. The speed at which you move through the portal feels like you are going to be torn apart. You awake next to Olga.
+                    Her belly seems to have grown even more than before. You awake tired. You do not replenish your spell slots.
+                </p>
+
+                <p id="sneakdecentAns" style="display:none">You move towards the portal. You move slowly and softly. The figure seems focused on the 
+                    crystal ball. You move towards the portal and are able to get through before the Figure notices that you were even there. You awake next to
+                    Olga. Her stomach has grown bigger since you went to bad last night. You awake from your long rest completely rested.
+                </p>
+
+                <p id="sneakgoodAns" style="display:none">You move towards the portal. You move slowly and softly. The Figure seems focused on the crystal
+                    ball. Before you make it to the portal you hear, "You would leave your patron without saying 'hello'?" The Figure stands. You turn towards him. 
+                    He stands in front of you. Taller than you remembered. "I've been trying to figure out how you got here." He looks at you deeply. "I see...Very
+                    clever. You stole the dagger from your friend. I gave it to him as a gift. The Dagger must have brought you to me. " The Dagger flies out 
+                    from your bag. He looks at it closely. "You know. This Dagger is a direct line to me. I thought your friend would have used it by now. But I guess it is 
+                    fitting for you to have it." He hands the dagger back to you. "I shall see you soon..." He turns back to his desk and watches his crystal ball.
+                    You move towards the portal. You are instantly thrown back to your bed. Olga's stomach has noticably grown since you went to bed. You go back to 
+                    sleep and are well rested.
+                </p>
+
+                <p id="sneakgreatAns" style="display:none">You move towards the portal. You move slowly and softly. The Figure seems focused on the crystal
+                    ball. Before you make it to the portal you hear, "You would leave your patron without saying 'hello'?" The Figure stands. You turn towards him. 
+                    He stands in front of you. Taller than you remembered. "I've been trying to figure out how you got here." He looks at you deeply. "I see...Very
+                    clever. You stole the dagger from your friend. I gave it to him as a gift. The Dagger must have brought you to me. " The Dagger flies out 
+                    from your bag. He looks at it closely. "You know. This Dagger is a direct line to me. I thought your friend would have used it by now. But I guess it is 
+                    fitting for you to have it." He hands the dagger back to you. "I shall see you soon...Oh and be careful going through that bank. There is more
+                    to the bank than you have seen." He turns back to his desk and watches his crystal ball. You move towards the portal. You are instantly thrown back to your bed. Olga's stomach has noticably grown since you went to bed. You go back to 
+                    sleep and are well rested.
+                </p>
+
+                <p id="sneaknat20Ans" style="display:none">You move towards the portal. You move slowly and softly. The Figure seems focused on the crystal
+                    ball. Before you make it to the portal you hear, "You would leave your patron without saying 'hello'?" The Figure stands. You turn towards him. 
+                    He stands in front of you. Taller than you remembered. "I've been trying to figure out how you got here." He looks at you deeply. "I see...Very
+                    clever. You stole the dagger from your friend. I gave it to him as a gift. The Dagger must have brought you to me. " The Dagger flies out 
+                    from your bag. He looks at it closely. "You know. This Dagger is a direct line to me. I thought your friend would have used it by now. But I guess it is 
+                    fitting for you to have it." He hands the dagger back to you. "I shall see you soon...Oh and be careful going through that bank. There is more
+                    to the bank than you have seen." He turns back to his desk and watches his crystal ball. You move towards the portal. You are instantly thrown back to your bed. 
+                    Olga's stomach seems to have shrunk since last night. You feel a sense of relief. You feel like maybe your patron did you a favor. You go back to 
+                    sleep and are well rested.
+                </p>
+
+
 
             </section>
  
